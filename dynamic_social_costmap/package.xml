@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package>
+  <name>dynamic_social_costmap</name>
+  <version>0.0.0</version>
+  <description>
+    The dynamic_social_costmap package defines a plugin for the dynamic_layers
+    of the dynamic_costmap, used by the lattice_planner. The dynamic_social_costmap
+    uses a Gaussian based social cost function and the predicted trajectories
+    of people in the environment to represent socially sensitive space in the
+    map
+  </description>
+  <maintainer email="marinakollmitz@gmail.com">Marina Kollmitz</maintainer>
+  <license>BSD</license>
+  
+  <author>Marina Kollmitz</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>costmap_2d</build_depend>
+  <build_depend>dynamic_reconfigure</build_depend>
+  <build_depend>dynamic_reconfigure</build_depend>
+  <build_depend>lattice_planner</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>people_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+
+  <run_depend>costmap_2d</run_depend>
+  <run_depend>dynamic_reconfigure</run_depend>
+  <run_depend>lattice_planner</run_depend>
+  <run_depend>message_runtime</run_depend>
+  <run_depend>people_msgs</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+
+  <export>
+    <lattice_planner plugin="${prefix}/social_layer_plugin.xml" />
+  </export>
+
+</package>
