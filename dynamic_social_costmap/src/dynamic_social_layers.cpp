@@ -53,7 +53,8 @@ void SocialLayers::initialize(costmap_2d::Costmap2DROS* static_map,
   people_sub_ = nh_.subscribe("/people_prediction", 1, &SocialLayers::peopleCallback, this);
 
   //initialize dynamic reconfigure server
-  drsv_ = new dynamic_reconfigure::Server<dynamic_social_costmap::SocialCostmapConfig>(nh_);
+  ros::NodeHandle private_nh("dynamic_social_costmap");
+  drsv_ = new dynamic_reconfigure::Server<dynamic_social_costmap::SocialCostmapConfig>(private_nh);
   dynamic_reconfigure::Server<dynamic_social_costmap::SocialCostmapConfig>::CallbackType cb;
   cb = boost::bind(&SocialLayers::reconfigureCB, this, _1, _2);
   drsv_->setCallback(cb);
