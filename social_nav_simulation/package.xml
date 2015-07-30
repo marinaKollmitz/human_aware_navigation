@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+  <name>social_nav_simulation</name>
+  <version>0.0.0</version>
+  <description>
+     A package that contains models to simulate populated environments. 
+  </description>
+  <maintainer email="marinakollmitz@gmail.com">Marina Kollmitz</maintainer>
+  <license>BSD</license>
+
+  <author>Marina Kollmitz</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>turtlebot_gazebo</run_depend>
+  <run_depend>gazebo_ros</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+
+</package>
