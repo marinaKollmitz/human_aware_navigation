@@ -41,6 +41,12 @@ PLUGINLIB_EXPORT_CLASS(dynamic_social_costmap::SocialLayers, lattice_planner::Dy
 namespace dynamic_social_costmap
 {
 
+  SocialLayers::~SocialLayers()
+  {
+    delete tf_;
+    delete drsv_;
+  }
+
 void SocialLayers::initialize(costmap_2d::Costmap2DROS* static_map,
                               unsigned int max_timesteps, ros::Duration time_resolution)
 {

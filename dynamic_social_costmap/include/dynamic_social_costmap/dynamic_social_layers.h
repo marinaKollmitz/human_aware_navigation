@@ -75,6 +75,11 @@ public:
   SocialLayers(){}
 
   /**
+  * @brief destructor
+  */
+  ~SocialLayers();
+
+  /**
    * @brief initialize the social layers
    * @param static_map the static map
    * @param max_timesteps maximum number of time steps represented by the dynamic layers
