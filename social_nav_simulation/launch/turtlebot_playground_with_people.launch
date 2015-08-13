@@ -13,8 +13,8 @@
   </include>
 
   <!-- Spawn people into Gazebo -->
-  <node name="spawn_person1" pkg="gazebo_ros" type="spawn_model" args="-file $(find home_env_sim)/gazebo/urdf/human.urdf -urdf -x 1.9 -y 0.2 -model person1" />
-  <node name="spawn_person2" pkg="gazebo_ros" type="spawn_model" args="-file $(find home_env_sim)/gazebo/urdf/human.urdf -urdf -x -2 -y -2.2 -Y 1.56 -model person2" />
+  <node name="spawn_person1" pkg="gazebo_ros" type="spawn_model" args="-file $(find social_nav_simulation)/gazebo/models/human/standing.sdf -sdf -x 1.5 -y 0.57 -Y -1.45 -model person1" />
+  <node name="spawn_person2" pkg="gazebo_ros" type="spawn_model" args="-file $(find social_nav_simulation)/gazebo/models/human/walking.sdf -sdf -x -4.25 -y 1.58 -Y 0.84 -model person2" />
   
   <include file="$(find turtlebot_gazebo)/launch/includes/$(arg base).launch.xml">
     <arg name="base" value="$(arg base)"/>
