@@ -1,0 +1,29 @@
+<launch>
+
+  <!--<arg name="map_file" default="$(find human_aware_nav_launch)/maps/turtlebot_at_home_map.yaml"/> -->
+  <!--<arg name="map_file" default="$(find human_aware_nav_launch)/maps/social_sim_env.yaml"/> -->
+  <arg name="map_file" default="$(find human_aware_nav_launch)/maps/playground_new.yaml"/>
+
+  <arg name="initial_pose_x" default="0" />
+  <arg name="initial_pose_y" default="0" />
+  <arg name="initial_pose_a" default="0" />
+
+  <!-- Run the map server -->
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+  <include file="$(find turtlebot_navigation)/launch/includes/amcl.launch.xml" >
+  <arg name="initial_pose_x" value="$(arg initial_pose_x)" />
+  <arg name="initial_pose_y" value="$(arg initial_pose_y)" />
+  <arg name="initial_pose_a" value="$(arg initial_pose_a)" />
+  </include>
+
+  <!--- Run Move Base -->
+  <include file="$(find human_aware_nav_launch)/launch/move_base.launch" />
+
+  <!--- Run constant velocity prediction node -->
+  <node name="constant_velocity_prediction" pkg="people_prediction" type="constant_velocity_prediction" />
+
+  <!--- Run rviz --> 
+  <include file="$(find human_aware_nav_launch)/launch/rviz.launch" />
+ 
+</launch>

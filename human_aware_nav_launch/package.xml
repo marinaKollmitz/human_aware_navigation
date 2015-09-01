@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+  <name>human_aware_nav_launch</name>
+  <version>0.0.0</version>
+  <description>
+    package with config and launch files for human_aware_navigation
+  </description>
+  <maintainer email="marinakollmitz@gmail.com">Marina Kollmitz</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>map_server</run_depend>
+  <run_depend>turtlebot_navigation</run_depend>
+  <run_depend>move_base</run_depend>
+  <run_depend>rviz</run_depend>
+
+  <export>
+
+  </export>
+</package>

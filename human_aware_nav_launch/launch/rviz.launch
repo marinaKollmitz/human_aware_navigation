@@ -1,0 +1,5 @@
+<launch>
+  <arg name="config_file" default="$(find human_aware_nav_launch)/config/rviz_config.rviz"/>	
+  <node pkg="rviz" type="rviz" name="rviz_navigation" args="-d $(arg config_file)" output="screen">
+  </node>
+</launch>
