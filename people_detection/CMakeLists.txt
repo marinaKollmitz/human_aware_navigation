@@ -12,9 +12,7 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-catkin_package(
-  INCLUDE_DIRS include
-)
+catkin_package()
 
 add_executable(fake_detection src/fake_detection.cpp)
 
