@@ -7,7 +7,7 @@
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="use_sim_time" value="true"/>
     <arg name="debug" value="false"/>
-    <arg name="world_name" value="$(find home_env_sim)/gazebo/worlds/social_sim_env.world"/>
+    <arg name="world_name" value="$(find social_nav_simulation)/gazebo/worlds/social_sim_env.world"/>
   </include>
   
   <include file="$(find turtlebot_gazebo)/launch/includes/$(arg base).launch.xml">

@@ -28,7 +28,7 @@
         <pose>0 0 -0.02 0 0 0</pose>
         <geometry>
           <mesh>
-            <uri>model://person_walking/meshes/walking.dae</uri>
+            <uri>model://social_nav_simulation/gazebo/models/human/meshes/walking.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -37,7 +37,7 @@
         <pose>0 0 -0.02 0 0 0</pose>
         <geometry>
           <mesh>
-            <uri>model://person_walking/meshes/walking.dae</uri>
+            <uri>model://social_nav_simulation/gazebo/models/human/meshes/walking.dae</uri>
           </mesh>
         </geometry>
       </visual>

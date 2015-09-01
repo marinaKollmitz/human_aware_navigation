@@ -15,4 +15,13 @@
   <run_depend>gazebo_ros</run_depend>
   <run_depend>robot_state_publisher</run_depend>
 
+  <export>
+  <!-- gazebo_ros_paths_plugin automatically adds these to
+       GAZEBO_PLUGIN_PATH and GAZEBO_MODEL_PATH when you do this export inside
+       the package.xml file. You can than use URIs of type model://my_package/stuff. -->
+   <gazebo_ros                                                                 
+      gazebo_plugin_path="${prefix}/lib"
+      gazebo_model_path="${prefix}/.." /> 
+</export>
+
 </package>
