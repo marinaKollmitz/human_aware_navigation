@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+  <name>people_prediction</name>
+  <version>0.0.0</version>
+  <description>
+     A package with nodes for the prediction of the trajectories of people
+  </description>
+  <maintainer email="marinakollmitz@gmail.com">Marina Kollmitz</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>people_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>visualization_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <run_depend>people_msgs</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>visualization_msgs</run_depend>
+  <run_depend>tf</run_depend>
+
+</package>
