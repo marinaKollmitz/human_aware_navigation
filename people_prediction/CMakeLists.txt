@@ -13,7 +13,12 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
+catkin_package(
+  INCLUDE_DIRS include
+)
+
 add_executable(constant_velocity_prediction src/constant_velocity_prediction.cpp)
+
 add_dependencies(constant_velocity_prediction people_msgs_gencpp visualization_msgs_gencpp)
 
 target_link_libraries(constant_velocity_prediction
