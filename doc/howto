@@ -1,0 +1,7 @@
+to generate Doxygen documentation (www.doxygen.org) for the lattice_planner package, do:
+--
+$ cd <path_to_human_aware_navigation_folder>
+$ doxygen Doxyfile
+-- 
+and open index.html from doc/html folder
+
