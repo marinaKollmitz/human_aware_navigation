@@ -8,7 +8,7 @@ PROJECT_NAME           = "Human Aware Navigation"
 PROJECT_NUMBER         = 
 PROJECT_BRIEF          = "providing ROS packages to enable the planning of navigation paths that take human comfort into account."
 PROJECT_LOGO           = 
-OUTPUT_DIRECTORY       = /home/kollmitz/catkin_ws/src/human_aware_navigation/doc
+OUTPUT_DIRECTORY       = ./doc
 CREATE_SUBDIRS         = NO
 OUTPUT_LANGUAGE        = English
 BRIEF_MEMBER_DESC      = YES
@@ -107,7 +107,7 @@ WARN_LOGFILE           =
 #---------------------------------------------------------------------------
 # Configuration options related to the input files
 #---------------------------------------------------------------------------
-INPUT                  = /home/kollmitz/catkin_ws/src/human_aware_navigation
+INPUT                  = .
 INPUT_ENCODING         = UTF-8
 FILE_PATTERNS          = *.c \
                          *.cc \
