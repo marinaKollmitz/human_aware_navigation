@@ -295,7 +295,7 @@ void SocialLayers::saveTimedCostmaps(std::string path)
     timed_map = timed_costmap_.at(i);
 
     std::stringstream ss;
-    ss << path << "map_" << i << ".png";
+    ss << path << "map_" << i << ".pgm";
     timed_map->saveAsMapImage(ss.str().c_str());
   }
 
