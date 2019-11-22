@@ -11,7 +11,7 @@
   <author>Marina Kollmitz</author>
 
   <buildtool_depend>catkin</buildtool_depend>
-  <run_depend>turtlebot_gazebo</run_depend>
+  <!--run_depend>turtlebot3_gazebo</run_depend-->
   <run_depend>gazebo_ros</run_depend>
   <run_depend>robot_state_publisher</run_depend>
 
