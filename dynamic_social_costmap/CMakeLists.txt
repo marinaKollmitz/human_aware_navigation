@@ -10,6 +10,7 @@ find_package(catkin REQUIRED
     people_msgs
     roscpp
     rospy
+    pcl_ros
 )
 
 generate_dynamic_reconfigure_options(
