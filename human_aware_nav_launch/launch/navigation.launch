@@ -11,7 +11,7 @@
   <!-- Run the map server -->
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 
-  <include file="$(find turtlebot_navigation)/launch/includes/amcl.launch.xml" >
+  <include file="$(find turtlebot_navigation)/launch/includes/amcl/amcl.launch.xml" >
   <arg name="initial_pose_x" value="$(arg initial_pose_x)" />
   <arg name="initial_pose_y" value="$(arg initial_pose_y)" />
   <arg name="initial_pose_a" value="$(arg initial_pose_a)" />
